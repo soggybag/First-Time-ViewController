@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="589" y="217"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="QY4-ZJ-D4e">
             <objects>
-                <viewController storyboardIdentifier="FirstTimeViewController" id="8dn-j2-hSK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstTimeViewController" id="8dn-j2-hSK" customClass="FirstViewController" customModule="First_Time_ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ebz-Y0-y0e"/>
                         <viewControllerLayoutGuide type="bottom" id="RMR-Pp-4wg"/>
@@ -76,11 +76,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnN-Me-gn5">
+                                <rect key="frame" x="105" y="423" width="110" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Continue to app">
+                                    <color key="titleColor" red="1" green="0.99055115041461317" blue="0.94693631267046463" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="8dn-j2-hSK" eventType="touchUpInside" id="Hph-sA-HlM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.91338820684523814" green="0.29373400627003776" blue="0.21893966858582711" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hfT-dM-GSb" firstAttribute="centerX" secondItem="6so-wE-1Va" secondAttribute="centerX" id="0ba-94-sdU"/>
+                            <constraint firstItem="RMR-Pp-4wg" firstAttribute="top" secondItem="xnN-Me-gn5" secondAttribute="bottom" constant="27" id="EFg-24-loJ"/>
+                            <constraint firstItem="xnN-Me-gn5" firstAttribute="centerX" secondItem="hfT-dM-GSb" secondAttribute="centerX" id="Fvp-Gd-6dm"/>
                             <constraint firstItem="hfT-dM-GSb" firstAttribute="centerY" secondItem="6so-wE-1Va" secondAttribute="centerY" id="Ric-Ve-cFR"/>
                         </constraints>
                     </view>
